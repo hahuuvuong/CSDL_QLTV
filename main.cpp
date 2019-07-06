@@ -1,4 +1,6 @@
-#include <iostream>
+#include<iostream>
+#include<cstdlib>
+#include<ctime>
 using namespace std;
 #define MAXLIST 100
 struct DanhMucSach {
@@ -22,13 +24,13 @@ struct DauSach{
 	string tacGia;
 	unsigned int namXuatBan;
 	string theLoai;
+	DMS *dms;
 };
 typedef struct DauSach DS;
 
 struct nodeDS{
 	int n;
 	DS nodeDS[MAXLIST];
-	LIST_DMS dms;
 };
 typedef struct nodeDS *NODE_DS;
 
@@ -52,6 +54,7 @@ struct DocGia{
 	string ten;
 	string gioiTinh;
 	int trangThai;
+	NODE_MS ms;
 };
 typedef struct DocGia DG;
 
@@ -60,11 +63,10 @@ struct nodeDG{
 	DG info;
 	nodeDG *left;
 	nodeDG *right;
-	NODE_MS ms;
 };
 typedef struct nodeDG *NODE_DG;
 
 int main(){
-	
+
 	return 0;
 }
