@@ -1,8 +1,13 @@
-#include<iostream>
-#include<cstdlib>
-#include<ctime>
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include <stdio.h>
+#include <string.h>
+#include "MenuDong.h"
 using namespace std;
 #define MAXLIST 100
+
+// khai bao cau truc 
 struct DanhMucSach {
 	string maSach;
 	unsigned int trangThai;
@@ -52,7 +57,7 @@ struct DocGia{
 	int maThe;
 	string ho;
 	string ten;
-	string gioiTinh;
+	char gioiTinh;
 	int trangThai;
 	NODE_MS ms;
 };
@@ -65,8 +70,11 @@ struct nodeDG{
 	nodeDG *right;
 };
 typedef struct nodeDG *NODE_DG;
+// ----------------------------------------
+
 
 int main(){
-
+	int chon=0;
+	 chon = MenuDong (thucdon);
 	return 0;
 }
