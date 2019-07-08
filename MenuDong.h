@@ -12,7 +12,7 @@ const int cot = 2 ;
 const int Up = 72;
 const int Down = 80;
 using namespace std;
-char thucdon [so_item][50] = {"1. Them doc gia                        ",
+char menu [so_item][50] = {"1. Them doc gia                        ",
 			                  "2. Hieu chinh doc gia                  ",
 			                  "3. in danh sach doc gia                ",
 			                  "4. Them dau sach                       ",

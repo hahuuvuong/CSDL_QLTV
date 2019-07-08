@@ -59,7 +59,7 @@ struct DocGia{
 	string ten;
 	char gioiTinh;
 	int trangThai;
-	NODE_MS ms;
+	MS *ms;
 };
 typedef struct DocGia DG;
 
@@ -75,6 +75,6 @@ typedef struct nodeDG *NODE_DG;
 
 int main(){
 	int chon=0;
-	 chon = MenuDong (thucdon);
+	 chon = MenuDong (menu);
 	return 0;
 }
